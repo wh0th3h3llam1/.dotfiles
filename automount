@@ -1,0 +1,32 @@
+#!/bin/bash
+
+# Author: wh0th3h3llam1
+# Github: https://github.com/wh0th3h3llam1
+
+# Auto Mounting Windows Drives
+
+# ANSI Colour Codes for Coloured Output
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+ORANGE='\033[0;33m'
+NC='\033[0m' # No Color
+
+
+echo "Mounting Drives..."
+
+sudo mount /dev/sda4 /media/$USER/WINDOWS 2> /dev/null
+
+if [[ $? -ne 0 ]]; then
+	printf "${RED}[ERROR]${NC} Failed to mount 'WINDOWS' partition\n"
+else
+	printf "${GREEN}[SUCCESS]${NC} Successfully mounted 'WINDOWS' partition\n"
+fi
+
+
+sudo mount /dev/sda3 /media/$USER/'New Volume' 2> /dev/null
+
+if [[ $? -ne 0 ]]; then
+	printf "${RED}[ERROR]${NC} Failed to mount 'New Volume' partition\n"
+else
+	printf "${GREEN}[SUCCESS]${NC} Successfully mounted 'New Volume' partition\n"
+fi

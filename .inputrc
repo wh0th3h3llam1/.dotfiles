@@ -1,0 +1,3 @@
+# To Set Case-insensitive Tab-Completion
+
+set completion-ignore-case on
