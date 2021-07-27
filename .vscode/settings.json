@@ -1,0 +1,51 @@
+{
+    "bracket-pair-colorizer-2.colors": [
+        "LightSkyBlue", "Green", "Lime",
+        "Yellow", "Orange", "White", "Gold",
+    ],
+    "bracket-pair-colorizer-2.forceIterationColorCycle": true,
+    "bracket-pair-colorizer-2.forceUniqueOpeningColor": true,
+    "bracket-pair-colorizer-2.highlightActiveScope": true,
+    "bracket-pair-colorizer-2.showBracketsInGutter": true,
+
+    "editor.formatOnPaste": true,
+    "editor.fontSize": 15,
+    "editor.insertSpaces": false,
+    "editor.quickSuggestions": true,
+    "editor.renderControlCharacters": true,
+    "editor.suggestSelection": "first",
+    "editor.wordWrap": "on",
+    
+    "files.associations": {
+        "*.html": "html"
+    },
+
+    "git.autofetch": true,
+
+    "json.maxItemsComputed": 3000,
+
+    "markdown-preview-enhanced.scrollSync": false,
+
+    "python.languageServer": "Jedi",
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.completeFunctionParens": true,
+    "python.autoComplete.addBrackets": true,
+    "python.defaultInterpreterPath": "/usr/bin/python3.8",
+    "python.workspaceSymbols.enabled": true,
+    "python.workspaceSymbols.rebuildOnFileSave": true,
+
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    
+    "window.zoomLevel": 1,
+    "window.menuBarVisibility": "toggle",
+    "workbench.colorTheme": "Monokai",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.preferredDarkColorTheme": "Monokai",
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+}
