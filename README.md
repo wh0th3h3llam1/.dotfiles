@@ -5,11 +5,11 @@ A collection of dotfiles (config files) for Linux Systems to increase usability 
 
 # Platform
 
-Tested on Ubuntu 18.04
+Tested and working on Ubuntu 18.04
 
 It should work on most linux flavors
 
 
 # License
 
-MIT
+[MIT](https://mit-license.org/)

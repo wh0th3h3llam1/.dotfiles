@@ -9,24 +9,90 @@
 RED='\033[0;31m'
 GREEN='\033[0;32m'
 ORANGE='\033[0;33m'
+CYAN='\033[0;36m'
+YELLOW='\033[1;33m'
+
 NC='\033[0m' # No Color
 
 
-echo "Mounting Drives..."
 
-sudo mount /dev/sda4 /media/$USER/WINDOWS 2> /dev/null
+printf "${CYAN}[+]${NC} Mounting Drives...\n"
 
-if [[ $? -ne 0 ]]; then
-	printf "${RED}[ERROR]${NC} Failed to mount 'WINDOWS' partition\n"
-else
-	printf "${GREEN}[SUCCESS]${NC} Successfully mounted 'WINDOWS' partition\n"
+
+# Path to mount windows partitions
+PARTITION_PATH="/media/$USER"
+
+
+# Windows Drives Name
+C="WINDOWS"
+F="New Volume"
+
+
+# If the path does not exist
+if [ ! -d "$PARTITION_PATH/$C" ];
+then
+	printf "${CYAN}[INFO]${NC} Creating Mount Point $PARTITION_PATH/$C...\n"
+	sudo mkdir $PARTITION_PATH/$C
 fi
 
 
-sudo mount /dev/sda3 /media/$USER/'New Volume' 2> /dev/null
+sudo mount /dev/sda3 $PARTITION_PATH/$C 2> /dev/null
 
-if [[ $? -ne 0 ]]; then
-	printf "${RED}[ERROR]${NC} Failed to mount 'New Volume' partition\n"
+
+if [[ $? -eq 16 ]]; then
+	printf "${ORANGE}[INFO]${NC} '$C' partition is already mounted\n"
+elif [[ $? -eq 1 ]]; then
+	printf "${YELLOW}[WARNING]${NC} Insufficient Permissions\n"
+elif [[ $? -eq 0 ]]; then
+	printf "${GREEN}[SUCCESS]${NC} Successfully mounted '$C' partition\n"
+elif [[ $? -eq 8 ]]; then
+	printf "${YELLOW}[WARNING]${NC} Interrupted by user\n"
 else
-	printf "${GREEN}[SUCCESS]${NC} Successfully mounted 'New Volume' partition\n"
+	printf "${RED}[ERROR]${NC} Failed to mount '$C' partition\n"
 fi
+
+
+# -----------------------------------------------------------------
+if [ ! -d "$PARTITION_PATH/$F" ];
+then
+	printf "${CYAN}[INFO]${NC} Creating Mount Point $F...\n"
+	sudo mkdir "$PARTITION_PATH/$F"
+fi
+
+sudo mount /dev/sda4 "$PARTITION_PATH/$F" 2> /dev/null
+
+if [[ $? -eq 16 ]]; then
+	printf "${ORANGE}[INFO]${NC} '$F' partition is already mounted\n"
+elif [[ $? -eq 1 ]]; then
+	printf "${YELLOW}[WARNING]${NC} Insufficient Permissions\n"
+elif [[ $? -eq 0 ]]; then
+	printf "${GREEN}[SUCCESS]${NC} Successfully mounted '$F' partition\n"
+elif [[ $? -eq 8 ]]; then
+	printf "${YELLOW}[WARNING]${NC} Interrupted by user\n"
+else
+	printf "${RED}[ERROR]${NC} Failed to mount '$F' partition\n"
+fi
+
+
+
+
+# RETURN CODES for mount command
+# 	mount has the following return codes (the bits can be ORed):
+
+# 	0      success
+
+# 	1      incorrect invocation or permissions
+
+# 	2      system error (out of memory, cannot fork, no more loop devices)
+
+# 	4      internal mount bug
+
+# 	8      user interrupt
+
+# 	16     problems writing or locking /etc/mtab
+
+# 	32     mount failure
+
+# 	64     some mount succeeded
+
+# 	The command mount -a returns 0 (all succeeded), 32 (all failed), or 64 (some failed, some succeeded).
