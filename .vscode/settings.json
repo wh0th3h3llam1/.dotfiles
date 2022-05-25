@@ -105,17 +105,20 @@
 	"workbench.productIconTheme": "material-product-icons",
 	"workbench.colorCustomizations": {
 		"[Material Monokai High Contrast]": {
+			"editor.background": "#12181B",
+			"gitDecoration.addedResourceForeground": "#26dbdb",
+			"gitDecoration.ignoredResourceForeground": "#777777",
+			"gitDecoration.modifiedResourceForeground": "#dab678",
+			"gitDecoration.untrackedResourceForeground": "#90C356",
+			"gitlens.decorations.ignoredForegroundColor": "#777777",
 			"sideBar.foreground": "#BEBEBE",
 			"statusBar.debuggingBackground": "#DD6819",
-			"editor.background": "#12181B",
-			"gitDecoration.ignoredResourceForeground": "#777777",
-			"gitlens.decorations.ignoredForegroundColor": "#777777",
 			"symbolIcon.classForeground": "#9DFF00",
 		},
 		"[Monokai]": {
-			"statusBar.debuggingBackground": "#DD6819",
+			"editor.background": "#1D1E1B",
 			"statusBar.background": "#2A2C2B",
-			"editor.background": "#1D1E1B"
+			"statusBar.debuggingBackground": "#DD6819",
 		},
 		"editorBracketHighlight.foreground1": "#FFD700",
 		"editorBracketHighlight.foreground2": "#00CED1",
