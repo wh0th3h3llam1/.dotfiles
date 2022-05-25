@@ -50,10 +50,6 @@
 	alias saf="sudo apt upgrade --fix-missing"
 	alias sac="sudo apt clean"
 
-	# Snap Aliases
-	alias snap="sudo snap install"
-
-
 	# Update and Upgrade Aliases
 	alias update="sudo apt update"
 	alias upgrade="sudo apt upgrade"
@@ -100,6 +96,7 @@
 # Django Commands
 	# To run django server
 	alias runserver="python manage.py runserver"
+	alias rs="python manage.py runserver"
 
 	# To make migrations
 	alias makemig="python manage.py makemigrations"
