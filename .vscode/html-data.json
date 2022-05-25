@@ -1,0 +1,75 @@
+{
+	"version": 1.1,
+	"tags": [
+		{
+			"name": "button",
+			"description": "A button means an operation (or a series of operations). Clicking a button will trigger corresponding business logic.",
+			"attributes": [
+				{
+					"name": "nz-button",
+					"description": "nz-button directive is required for antd to work"
+				},
+				{
+					"name": "nzType",
+					"valueSet": "buttonTypes",
+					"description": "In Ant Design, 4 types of button are provided. primary, default, dashed, text"
+				}
+			],
+			"references": [
+				{
+					"name": "Angular Ant Design Buttons",
+					"url": "https://ng.ant.design/components/button/en"
+				}
+			]
+		}
+	],
+	"globalAttributes": [
+		{
+			"name": "nz-typography",
+			"description": {
+				"kind": "markdown",
+				"value": "Angular Antd [Typography](https://ng.ant.design/components/typography/en)"
+			}
+		}
+	],
+	"valueSets": [
+		{
+			"name": "booleanValues",
+			"values": [
+				{
+					"name": "true",
+					"description": "True value of Boolean"
+				},
+				{
+					"name": "false",
+					"description": "false value of Boolean"
+				}
+			]
+		},
+		{
+			"name": "buttonTypes",
+			"values": [
+				{
+					"name": "primary",
+					"description": "indicate the main action, one primary button at most in one section."
+				},
+				{
+					"name": "default",
+					"description": "indicate a series of actions without priority."
+				},
+				{
+					"name": "dashed",
+					"description": "used for adding action commonly."
+				},
+				{
+					"name": "text",
+					"description": "used for the most secondary action."
+				},
+				{
+					"name": "link",
+					"description": "used for external links."
+				}
+			]
+		}
+	]
+}

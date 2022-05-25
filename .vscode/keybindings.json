@@ -1,0 +1,82 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+	{
+		"key": "ctrl+l ctrl+t",
+		"command": "editor.action.transformToTitlecase"
+	},
+	{
+		"key": "ctrl+l ctrl+l",
+		"command": "editor.action.transformToLowercase"
+	},
+	{
+		"key": "ctrl+l ctrl+u",
+		"command": "editor.action.transformToUppercase"
+	},
+	{
+		"key": "ctrl+l ctrl+o",
+		"command": "editor.action.transposeLetters"
+	},
+	{
+		"key": "ctrl+j",
+		"command": "editor.action.joinLines"
+	},
+	{
+		"key": "ctrl+shift+up",
+		"command": "editor.action.insertCursorAbove",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "ctrl+alt+up",
+		"command": "-editor.action.insertCursorAbove",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "ctrl+shift+down",
+		"command": "editor.action.insertCursorBelow",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "ctrl+alt+down",
+		"command": "-editor.action.insertCursorBelow",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "ctrl+l ctrl+s",
+		"command": "editor.action.transformToSnakecase"
+	},
+	{
+		"key": "ctrl+l ctrl+p",
+		"command": "-editor.action.transformToSnakecase",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "ctrl+tab",
+		"command": "workbench.action.nextPanelView",
+		"when": "panelFocus"
+	},
+	{
+		"key": "ctrl+w",
+		"command": "workbench.action.terminal.kill",
+		"when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+	},
+	{
+		"key": "ctrl+w",
+		"command": "workbench.action.terminal.killEditor",
+		"when": "terminalEditorFocus && terminalHasBeenCreated && resourceScheme == 'vscode-terminal' || terminalEditorFocus && terminalProcessSupported && resourceScheme == 'vscode-terminal'"
+	},
+	{
+		"key": "ctrl+w",
+		"command": "-workbench.action.terminal.killEditor",
+		"when": "terminalEditorFocus && terminalFocus && terminalHasBeenCreated && resourceScheme == 'vscode-terminal' || terminalEditorFocus && terminalFocus && terminalProcessSupported && resourceScheme == 'vscode-terminal'"
+	},
+	{
+		"key": "ctrl+up",
+		"command": "workbench.action.terminal.resizePaneUp",
+		"when": "terminalFocus"
+	},
+	{
+		"key": "ctrl+down",
+		"command": "workbench.action.terminal.resizePaneDown",
+		"when": "terminalFocus"
+	}
+]

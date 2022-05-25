@@ -1,51 +1,144 @@
 {
-    "bracket-pair-colorizer-2.colors": [
-        "LightSkyBlue", "Green", "Lime",
-        "Yellow", "Orange", "White", "Gold",
-    ],
-    "bracket-pair-colorizer-2.forceIterationColorCycle": true,
-    "bracket-pair-colorizer-2.forceUniqueOpeningColor": true,
+	"bracket-pair-colorizer-2.colorMode": "Consecutive",
+	"bracket-pair-colorizer-2.colors": [
+		"Orchid",
+		"Gold",
+		"Teal",
+		"LightSkyBlue",
+		"Green",
+		"Lime",
+		"Yellow",
+		"Orange",
+		"White",
+	],
+	"bracket-pair-colorizer-2.excludedLanguages": [
+		"HTML"
+	],
+	"bracket-pair-colorizer-2.activeScopeCSS": [
+		"borderStyle : solid",
+		"borderWidth : 1px",
+		"borderColor : {color}",
+		"opacity: 0.5"
+	],
+	"bracket-pair-colorizer-2.forceIterationColorCycle": true,
+	"bracket-pair-colorizer-2.forceUniqueOpeningColor": true,
     "bracket-pair-colorizer-2.highlightActiveScope": true,
-    "bracket-pair-colorizer-2.showBracketsInGutter": true,
+	"bracket-pair-colorizer-2.showBracketsInGutter": true,
+	
+	"debug.openExplorerOnEnd": true,
+	"debug.saveBeforeStart": "nonUntitledEditorsInActiveGroup",
+	"diffEditor.ignoreTrimWhitespace": false,
+	"djangointellisense.settingsModule": "prosit.settings",
+	
+	"editor.autoClosingBrackets": "always",
+	"editor.bracketPairColorization.enabled": true,
+	"editor.bracketPairColorization.independentColorPoolPerBracketType": false,
+	"editor.fontSize": 17,
+	"editor.fontLigatures": true,
+	"editor.guides.bracketPairs": "active",
+	"editor.guides.bracketPairsHorizontal": true,
+	"editor.insertSpaces": false,
+	"editor.linkedEditing": true,
+	"editor.matchBrackets": "always",
+	"editor.tokenColorCustomizations": {
+		"[Material Monokai High Contrast]": {
+			"textMateRules": [
+				{
+					"scope": "meta.function-call.generic.python",
+					"settings": {
+						"foreground": "#A6E22E"
+					}
+				}
+			]
+		},
+		"[Monokai]": {
+			"textMateRules": [
+				{
+					"scope": "constant.other.caps.python",
+					"settings": {
+						"foreground": "#B78AFF"
+					}
+				}
+			]
+		}
+	},
+	"editor.wordWrap": "on",
+	"explorer.confirmUndo": "verbose",
+	
+	"git.autofetch": true,
 
-    "editor.formatOnPaste": true,
-    "editor.fontSize": 15,
-    "editor.insertSpaces": false,
-    "editor.quickSuggestions": true,
-    "editor.renderControlCharacters": true,
-    "editor.suggestSelection": "first",
-    "editor.wordWrap": "on",
-    
-    "files.associations": {
-        "*.html": "html"
-    },
+	"html.customData": [
+		"./.vscode/html-data.json"
+	],
+	"html.format.indentHandlebars": true,
+	"html.format.indentInnerHtml": true,
 
-    "git.autofetch": true,
-
-    "json.maxItemsComputed": 3000,
-
-    "markdown-preview-enhanced.scrollSync": false,
-
-    "python.languageServer": "Jedi",
-    "python.analysis.autoImportCompletions": true,
-    "python.analysis.completeFunctionParens": true,
-    "python.autoComplete.addBrackets": true,
-    "python.defaultInterpreterPath": "/usr/bin/python3.8",
-    "python.workspaceSymbols.enabled": true,
-    "python.workspaceSymbols.rebuildOnFileSave": true,
-
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    
-    "window.zoomLevel": 1,
-    "window.menuBarVisibility": "toggle",
-    "workbench.colorTheme": "Monokai",
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.preferredDarkColorTheme": "Monokai",
-    "workbench.editorAssociations": {
-        "*.ipynb": "jupyter-notebook"
-    },
-
-    "[html]": {
-        "editor.defaultFormatter": "vscode.html-language-features"
+	"pylance.insidersChannel": "daily",
+	"python.formatting.provider": "autopep8",
+	"python.languageServer": "Pylance",
+	"python.linting.enabled": true,
+	"python.linting.pylintEnabled": true,
+	"python.linting.pycodestyleArgs": [
+		"--ignore=E501"
+	],
+	"python.linting.lintOnSave": true,
+	"python.linting.pylintArgs": [
+		// "--disable=W0311",
+		"--load-plugin=pylint_django"
+	],
+	"python.linting.pylintCategorySeverity.warning": "Information",
+	
+	"telemetry.telemetryLevel": "off",
+	"terminal.integrated.commandsToSkipShell": [
+		"language-julia.interrupt"
+	],
+	"terminal.integrated.defaultProfile.windows": "Command Prompt",
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	
+	"workbench.activityBar.visible": true,
+	"workbench.colorTheme": "Monokai",
+	"workbench.editorAssociations": {
+		"*.pdf": "default",
+		"*.ipynb": "jupyter-notebook"
+	},
+	"workbench.iconTheme": "material-icon-theme",
+	"workbench.productIconTheme": "material-product-icons",
+	"workbench.colorCustomizations": {
+		"[Material Monokai High Contrast]": {
+			"sideBar.foreground": "#BEBEBE",
+			"statusBar.debuggingBackground": "#DD6819",
+			"editor.background": "#12181B",
+			"gitDecoration.ignoredResourceForeground": "#777777",
+			"gitlens.decorations.ignoredForegroundColor": "#777777",
+			"symbolIcon.classForeground": "#9DFF00",
+		},
+		"[Monokai]": {
+			"statusBar.debuggingBackground": "#DD6819",
+			"statusBar.background": "#2A2C2B",
+			"editor.background": "#1D1E1B"
+		},
+		"editorBracketHighlight.foreground1": "#FFD700",
+		"editorBracketHighlight.foreground2": "#00CED1",
+		"editorBracketHighlight.foreground3": "#3CB371",
+		"editorBracketHighlight.foreground4": "#ADFF2F",
+		"editorBracketHighlight.foreground5": "#FF8C00",
+		"editorBracketHighlight.foreground6": "#FFFFFF"
+	},
+	"workbench.startupEditor": "none",
+	
+	"[css]": {
+		"editor.defaultFormatter": "aeschli.vscode-css-formatter"
+	},
+	
+	"tabnine.experimentalAutoImports": true,
+	
+    // For Custom folder icons in Material Icon Theme
+    // Place icons in %USERPROFILE%\.vscode\extensions\icons\
+    // Name should be in the format:
+    // folder-<serializer>.svg
+    // folder-<serializer>-open.svg
+    "material-icon-theme.folders.associations": {
+        "serializer": "serializer",
+        "serializers": "serializer"
     },
 }
