@@ -35,32 +35,64 @@
 	"editor.bracketPairColorization.independentColorPoolPerBracketType": false,
 	"editor.fontSize": 17,
 	"editor.fontLigatures": true,
-	"editor.guides.bracketPairs": "active",
+	"editor.guides.bracketPairs": false,
 	"editor.guides.bracketPairsHorizontal": true,
 	"editor.insertSpaces": false,
 	"editor.linkedEditing": true,
-	"editor.matchBrackets": "always",
+	"editor.matchBrackets": "never",
 	"editor.tokenColorCustomizations": {
 		"[Material Monokai High Contrast]": {
 			"textMateRules": [
 				{
+					// Python Function Call
+					"name": "Python Generic Function Call",
 					"scope": "meta.function-call.generic.python",
 					"settings": {
-						"foreground": "#A6E22E"
+						"foreground": "#A6E22E",
+						"fontStyle": "italic bold"
 					}
-				}
-			]
+				},
+				{
+					// Python Attributes
+					"name": "Python Attributes",
+					"scope": "meta.attribute.python",
+					"settings": {
+						"foreground": "#1EDBEC",
+						"fontStyle": "underline"
+					}
+				},
+				{
+					// Python Class Name
+					"name": "Python Class Name",
+					"scope": "entity.name.type.class.python",
+					"settings": {
+						"foreground": "#9DFF00",
+						"fontStyle": ""
+					}
+				},
+			],
+			// "variables": "#ff8c00"
 		},
 		"[Monokai]": {
 			"textMateRules": [
 				{
+					// All CAPS Constant
 					"scope": "constant.other.caps.python",
 					"settings": {
 						"foreground": "#B78AFF"
 					}
-				}
+				},
+				{
+					// Python Attributes
+					"scope": "meta.attribute.python",
+					"settings": {
+						"foreground": "#1EDBEC",
+						"fontStyle": "underline"
+					}
+				},
+				
 			]
-		}
+		},
 	},
 	"editor.wordWrap": "on",
 	"explorer.confirmUndo": "verbose",
@@ -106,12 +138,17 @@
 	"workbench.colorCustomizations": {
 		"[Material Monokai High Contrast]": {
 			"editor.background": "#12181B",
-			"gitDecoration.addedResourceForeground": "#26dbdb",
+			"gitDecoration.addedResourceForeground": "#00CCCC",
 			"gitDecoration.ignoredResourceForeground": "#777777",
-			"gitDecoration.modifiedResourceForeground": "#dab678",
+			"gitDecoration.modifiedResourceForeground": "#DAB678",
+			"gitDecoration.renamedResourceForeground": "#E98F28",
+			"gitDecoration.deletedResourceForeground": "#ff2020",
+			"gitDecoration.stageDeletedResourceForeground": "#DC3A0D",
+			"gitDecoration.stageModifiedResourceForeground": "#0FD7FF",
 			"gitDecoration.untrackedResourceForeground": "#90C356",
 			"gitlens.decorations.ignoredForegroundColor": "#777777",
 			"sideBar.foreground": "#BEBEBE",
+			"sideBar.background": "#161F23",
 			"statusBar.debuggingBackground": "#DD6819",
 			"symbolIcon.classForeground": "#9DFF00",
 		},
