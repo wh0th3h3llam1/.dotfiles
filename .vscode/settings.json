@@ -22,7 +22,7 @@
 	],
 	"bracket-pair-colorizer-2.forceIterationColorCycle": true,
 	"bracket-pair-colorizer-2.forceUniqueOpeningColor": true,
-    "bracket-pair-colorizer-2.highlightActiveScope": true,
+	"bracket-pair-colorizer-2.highlightActiveScope": true,
 	"bracket-pair-colorizer-2.showBracketsInGutter": true,
 	
 	"debug.openExplorerOnEnd": true,
@@ -31,13 +31,12 @@
 	"djangointellisense.settingsModule": "prosit.settings",
 	
 	"editor.autoClosingBrackets": "always",
-	"editor.bracketPairColorization.enabled": true,
 	"editor.bracketPairColorization.independentColorPoolPerBracketType": false,
 	"editor.fontSize": 17,
 	"editor.fontLigatures": true,
-	"editor.guides.bracketPairs": false,
+	"editor.formatOnSave": true,
+	"editor.guides.bracketPairs": true,
 	"editor.guides.bracketPairsHorizontal": true,
-	"editor.insertSpaces": false,
 	"editor.linkedEditing": true,
 	"editor.matchBrackets": "never",
 	"editor.tokenColorCustomizations": {
@@ -97,6 +96,8 @@
 	"editor.wordWrap": "on",
 	"explorer.confirmUndo": "verbose",
 	
+	"files.insertFinalNewline": true,
+
 	"git.autofetch": true,
 
 	"html.customData": [
@@ -120,6 +121,7 @@
 	],
 	"python.linting.pylintCategorySeverity.warning": "Information",
 	
+	"tabnine.experimentalAutoImports": true,
 	"telemetry.telemetryLevel": "off",
 	"terminal.integrated.commandsToSkipShell": [
 		"language-julia.interrupt"
@@ -138,6 +140,9 @@
 	"workbench.colorCustomizations": {
 		"[Material Monokai High Contrast]": {
 			"editor.background": "#12181B",
+			"editorGutter.addedBackground": "#487E02",
+			"editorGutter.deletedBackground": "#C20000",
+			"editorGutter.modifiedBackground": "#1E96C5",
 			"gitDecoration.addedResourceForeground": "#00CCCC",
 			"gitDecoration.ignoredResourceForeground": "#777777",
 			"gitDecoration.modifiedResourceForeground": "#DAB678",
@@ -150,6 +155,8 @@
 			"sideBar.foreground": "#BEBEBE",
 			"sideBar.background": "#161F23",
 			"statusBar.debuggingBackground": "#DD6819",
+			"statusBar.foreground": "#CCCCCC",
+			// "statusBar.background": "#007ACC",
 			"symbolIcon.classForeground": "#9DFF00",
 		},
 		"[Monokai]": {
@@ -169,8 +176,10 @@
 	"[css]": {
 		"editor.defaultFormatter": "aeschli.vscode-css-formatter"
 	},
-	
-	"tabnine.experimentalAutoImports": true,
+	"[python]": {
+		"editor.defaultFormatter": "ms-python.black-formatter"
+	},
+	"thunder-client.codeSnippetLanguage": "cs-httpclient",
 	
     // For Custom folder icons in Material Icon Theme
     // Place icons in %USERPROFILE%\.vscode\extensions\icons\
