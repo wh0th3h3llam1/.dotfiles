@@ -114,13 +114,10 @@
 	alias runshell="python manage.py shell"
 
 	# To run django_extensions shell
+	alias rsp="python manage.py shell_plus"
 	alias runshellp="python manage.py shell_plus"
 
 	# To create superuser
 	alias createsu="python manage.py createsuperuser"
 
 
-# Virtual Environment
-
-	# Create Virtual Environments
-	alias createvenv="python -m venv "

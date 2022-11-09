@@ -21,6 +21,60 @@
 					"url": "https://ng.ant.design/components/button/en"
 				}
 			]
+		},
+		{
+			"name": "nz-card",
+			"description": "A card can be used to display content related to a single subject. The content can consist of multiple elements of varying types and sizes.",
+			"attributes": [
+				{
+					"name": "nzActions",
+					"description": "The action list, shows at the bottom of the Card."
+				},
+				{
+					"name": "nzBorderless",
+					"valueSet": "booleanValues",
+					"description": "Remove border around the card"
+				},
+				{
+					"name": "nzCover",
+					"description": "Card cover"
+				},
+				{
+					"name": "nzExtra",
+					"description": "Content to render in the top-right corner of the card"
+				},
+				{
+					"name": "nzHoverable",
+					"valueSet": "booleanValues",
+					"description": "Lift up when hovering card"
+				},
+				{
+					"name": "nzLoading",
+					"valueSet": "booleanValues",
+					"description": "Shows a loading indicator while the contents of the card are being fetched"
+				},
+				{
+					"name": "nzTitle",
+					"valueSet": "booleanValues",
+					"description": "Card title"
+				},
+				{
+					"name": "nzType",
+					"valueSet": "booleanValues",
+					"description": "Card style type, can be set to `inner` or not set"
+				},
+				{
+					"name": "nzSize",
+					"valueSet": "componentSizes",
+					"description": "Size of card"
+				}
+			],
+			"references": [
+				{
+					"name": "Angular Ant Design Card",
+					"url": "https://ng.ant.design/components/card/en"
+				}
+			]
 		}
 	],
 	"globalAttributes": [
@@ -29,6 +83,62 @@
 			"description": {
 				"kind": "markdown",
 				"value": "Angular Antd [Typography](https://ng.ant.design/components/typography/en)"
+			}
+		},
+		{
+			"name": "nzOffset",
+			"description": {
+				"kind": "markdown",
+				"value": "Angular Antd [Grid](https://ng.ant.design/components/grid/en#api)"
+			}
+		},
+		{
+			"name": "nzSpan",
+			"description": {
+				"kind": "markdown",
+				"value": "Angular Antd [Grid](https://ng.ant.design/components/grid/en#api)"
+			}
+		},
+		{
+			"name": "nzXs",
+			"description": {
+				"kind": "markdown",
+				"value": "Angular Antd [Grid](https://ng.ant.design/components/grid/en#api)"
+			}
+		},
+		{
+			"name": "nzSm",
+			"description": {
+				"kind": "markdown",
+				"value": "Angular Antd [Grid](https://ng.ant.design/components/grid/en#api)"
+			}
+		},
+		{
+			"name": "nzMd",
+			"description": {
+				"kind": "markdown",
+				"value": "Angular Antd [Grid](https://ng.ant.design/components/grid/en#api)"
+			}
+		},
+		{
+			"name": "nzLg",
+			"description": {
+				"kind": "markdown",
+				"value": "Angular Antd [Grid](https://ng.ant.design/components/grid/en#api)"
+			}
+		},
+		{
+			"name": "nzXl",
+			"description": {
+				"kind": "markdown",
+				"value": "Angular Antd [Grid](https://ng.ant.design/components/grid/en#api)"
+			}
+		},
+		{
+			"name": "nzXXl",
+			"description": {
+				"kind": "markdown",
+				"value": "Angular Antd [Grid](https://ng.ant.design/components/grid/en#api)"
 			}
 		}
 	],
@@ -68,6 +178,20 @@
 				{
 					"name": "link",
 					"description": "used for external links."
+				}
+			]
+		},
+		{
+			"name": "componentSizes",
+			"values": [
+				{
+					"name": "default"
+				},
+				{
+					"name": "small"
+				},
+				{
+					"name": "large"
 				}
 			]
 		}

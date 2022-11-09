@@ -1,7 +1,7 @@
 {
+	"better-comments.highlightPlainText": true,
 	"bracket-pair-colorizer-2.colorMode": "Consecutive",
 	"bracket-pair-colorizer-2.colors": [
-		"Orchid",
 		"Gold",
 		"Teal",
 		"LightSkyBlue",
@@ -20,25 +20,26 @@
 		"borderColor : {color}",
 		"opacity: 0.5"
 	],
+	"bracket-pair-colorizer-2.depreciation-notice": false,
 	"bracket-pair-colorizer-2.forceIterationColorCycle": true,
 	"bracket-pair-colorizer-2.forceUniqueOpeningColor": true,
 	"bracket-pair-colorizer-2.highlightActiveScope": true,
 	"bracket-pair-colorizer-2.showBracketsInGutter": true,
-	
+
 	"debug.openExplorerOnEnd": true,
 	"debug.saveBeforeStart": "nonUntitledEditorsInActiveGroup",
-	"diffEditor.ignoreTrimWhitespace": false,
 	"djangointellisense.settingsModule": "prosit.settings",
-	
+	"djangointellisense.projectRoot": "F:\\Coding\\zartek\\prosit\\prosit",
+
 	"editor.autoClosingBrackets": "always",
-	"editor.bracketPairColorization.independentColorPoolPerBracketType": false,
 	"editor.fontSize": 17,
 	"editor.fontLigatures": true,
-	"editor.formatOnSave": true,
 	"editor.guides.bracketPairs": true,
 	"editor.guides.bracketPairsHorizontal": true,
 	"editor.linkedEditing": true,
-	"editor.matchBrackets": "never",
+	"editor.language.colorizedBracketPairs": [
+
+	],
 	"editor.tokenColorCustomizations": {
 		"[Material Monokai High Contrast]": {
 			"textMateRules": [
@@ -54,7 +55,10 @@
 				{
 					// Python Attributes
 					"name": "Python Attributes",
-					"scope": "meta.attribute.python",
+					"scope": [
+						"meta.attribute.python",
+						"variable.other.property.js"
+					],
 					"settings": {
 						"foreground": "#1EDBEC",
 						"fontStyle": "underline"
@@ -69,6 +73,26 @@
 						"fontStyle": ""
 					}
 				},
+				{
+					// Using parameters in functions
+					"name": "Using Paramters",
+					"scope": [
+						"parameter",
+						"variable.parameter",
+						"variable.parameter.js",
+					],
+					"settings": {
+						"foreground": "#FD971F",
+						"fontStyle": "italic"
+					}
+				},
+				// {
+				// 	// All CAPS Constant
+				// 	"scope": "constant.other.caps.python",
+				// 	"settings": {
+				// 		"foreground": "#4FC1FF"
+				// 	}
+				// },
 			],
 			// "variables": "#ff8c00"
 		},
@@ -82,23 +106,32 @@
 					}
 				},
 				{
+					// All CAPS Constant
+					"scope": "variable.other.constant",
+					"settings": {
+						"foreground": "#4FC1FF"
+					}
+				},
+				{
 					// Python Attributes
 					"scope": "meta.attribute.python",
 					"settings": {
 						"foreground": "#1EDBEC",
 						"fontStyle": "underline"
 					}
-				},
-				
+				}
 			]
 		},
 	},
 	"editor.wordWrap": "on",
 	"explorer.confirmUndo": "verbose",
-	
+
 	"files.insertFinalNewline": true,
 
 	"git.autofetch": true,
+	"git.supportCancellation": true,
+	"git.showPushSuccessNotification": true,
+	"git.statusLimit": 1000,
 
 	"html.customData": [
 		"./.vscode/html-data.json"
@@ -106,8 +139,10 @@
 	"html.format.indentHandlebars": true,
 	"html.format.indentInnerHtml": true,
 
-	"pylance.insidersChannel": "daily",
-	"python.formatting.provider": "autopep8",
+	"python.analysis.autoImportCompletions": true,
+	"python.analysis.completeFunctionParens": true,
+	"python.analysis.indexing": true,
+	"python.formatting.provider": "black",
 	"python.languageServer": "Pylance",
 	"python.linting.enabled": true,
 	"python.linting.pylintEnabled": true,
@@ -120,17 +155,23 @@
 		"--load-plugin=pylint_django"
 	],
 	"python.linting.pylintCategorySeverity.warning": "Information",
-	
+
+	"remote.SSH.remotePlatform": {
+		"ec2-54-87-50-51.compute-1.amazonaws.com": "linux",
+		"blackvirus.myddns.me": "linux",
+		"blackvirus-server": "linux"
+	},
+
 	"tabnine.experimentalAutoImports": true,
 	"telemetry.telemetryLevel": "off",
 	"terminal.integrated.commandsToSkipShell": [
 		"language-julia.interrupt"
 	],
 	"terminal.integrated.defaultProfile.windows": "Command Prompt",
+	"thunder-client.codeSnippetLanguage": "cs-httpclient",
+	"thunder-client.htmlView": "Preview",
+
 	"typescript.updateImportsOnFileMove.enabled": "always",
-	
-	"workbench.activityBar.visible": true,
-	"workbench.colorTheme": "Monokai",
 	"workbench.editorAssociations": {
 		"*.pdf": "default",
 		"*.ipynb": "jupyter-notebook"
@@ -143,14 +184,16 @@
 			"editorGutter.addedBackground": "#487E02",
 			"editorGutter.deletedBackground": "#C20000",
 			"editorGutter.modifiedBackground": "#1E96C5",
+
 			"gitDecoration.addedResourceForeground": "#00CCCC",
+			"gitDecoration.conflictingResourceForeground": "#F0FF1B",
+			"gitDecoration.deletedResourceForeground": "#FF2020",
 			"gitDecoration.ignoredResourceForeground": "#777777",
-			"gitDecoration.modifiedResourceForeground": "#DAB678",
-			"gitDecoration.renamedResourceForeground": "#E98F28",
-			"gitDecoration.deletedResourceForeground": "#ff2020",
+			"gitDecoration.modifiedResourceForeground": "#E4B25A", // #DAB678
+			"gitDecoration.renamedResourceForeground": "#F75EFF",
 			"gitDecoration.stageDeletedResourceForeground": "#DC3A0D",
 			"gitDecoration.stageModifiedResourceForeground": "#0FD7FF",
-			"gitDecoration.untrackedResourceForeground": "#90C356",
+			"gitDecoration.untrackedResourceForeground": "#9AD25A", // #90C356
 			"gitlens.decorations.ignoredForegroundColor": "#777777",
 			"sideBar.foreground": "#BEBEBE",
 			"sideBar.background": "#161F23",
@@ -161,27 +204,54 @@
 		},
 		"[Monokai]": {
 			"editor.background": "#1D1E1B",
+			"editorGutter.addedBackground": "#487E02",
+			"editorGutter.deletedBackground": "#C20000",
+			"editorGutter.modifiedBackground": "#1E96C5",
+
+			"gitDecoration.addedResourceForeground": "#00CCCC",
+			"gitDecoration.conflictingResourceForeground": "#F0FF1B",
+			"gitDecoration.deletedResourceForeground": "#FF2020",
+			"gitDecoration.ignoredResourceForeground": "#777777",
+			"gitDecoration.modifiedResourceForeground": "#E4B25A", // #DAB678
+			"gitDecoration.renamedResourceForeground": "#F75EFF",
+			"gitDecoration.stageDeletedResourceForeground": "#DC3A0D",
+			"gitDecoration.stageModifiedResourceForeground": "#0FD7FF",
+			"gitDecoration.untrackedResourceForeground": "#9AD25A", // #90C356
+			"gitlens.decorations.ignoredForegroundColor": "#777777",
+
 			"statusBar.background": "#2A2C2B",
 			"statusBar.debuggingBackground": "#DD6819",
 		},
-		"editorBracketHighlight.foreground1": "#FFD700",
-		"editorBracketHighlight.foreground2": "#00CED1",
-		"editorBracketHighlight.foreground3": "#3CB371",
-		"editorBracketHighlight.foreground4": "#ADFF2F",
-		"editorBracketHighlight.foreground5": "#FF8C00",
-		"editorBracketHighlight.foreground6": "#FFFFFF"
+		// "editorBracketHighlight.foreground1": "#FFD700",
+		// "editorBracketHighlight.foreground2": "#00CED1",
+		// "editorBracketHighlight.foreground3": "#3CB371",
+		// "editorBracketHighlight.foreground4": "#ADFF2F",
+		// "editorBracketHighlight.foreground5": "#FF8C00",
+		// "editorBracketHighlight.foreground6": "#FFFFFF"
 	},
 	"workbench.startupEditor": "none",
-	
+
 	"[css]": {
 		"editor.defaultFormatter": "aeschli.vscode-css-formatter"
 	},
 	"[python]": {
-		"editor.defaultFormatter": "ms-python.black-formatter"
+		"editor.defaultFormatter": "ms-python.python"
 	},
-	"thunder-client.codeSnippetLanguage": "cs-httpclient",
-	
-    // For Custom folder icons in Material Icon Theme
+	"black-formatter.showNotifications": "onError",
+	"gitlens.codeLens.scopes": [
+		"document",
+		"containers",
+		"blocks"
+	],
+	"editor.accessibilitySupport": "off",
+	"editor.tabCompletion": "onlySnippets",
+	"workbench.colorTheme": "Material Monokai High Contrast",
+	"files.associations": {
+		".env": "env"
+	},
+	"redhat.telemetry.enabled": false,
+
+	// For Custom folder icons in Material Icon Theme
     // Place icons in %USERPROFILE%\.vscode\extensions\icons\
     // Name should be in the format:
     // folder-<serializer>.svg

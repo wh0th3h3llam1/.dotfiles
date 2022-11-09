@@ -1,0 +1,7 @@
+set indicator
+set linenumbers
+set smarthome
+set softwrap
+set tabsize 4
+# set titlecolor green,black
+set trimblanks
