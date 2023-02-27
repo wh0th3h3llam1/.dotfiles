@@ -1,263 +1,341 @@
 {
-	"better-comments.highlightPlainText": true,
-	"bracket-pair-colorizer-2.colorMode": "Consecutive",
-	"bracket-pair-colorizer-2.colors": [
-		"Gold",
-		"Teal",
-		"LightSkyBlue",
-		"Green",
-		"Lime",
-		"Yellow",
-		"Orange",
-		"White",
-	],
-	"bracket-pair-colorizer-2.excludedLanguages": [
-		"HTML"
-	],
-	"bracket-pair-colorizer-2.activeScopeCSS": [
-		"borderStyle : solid",
-		"borderWidth : 1px",
-		"borderColor : {color}",
-		"opacity: 0.5"
-	],
-	"bracket-pair-colorizer-2.depreciation-notice": false,
-	"bracket-pair-colorizer-2.forceIterationColorCycle": true,
-	"bracket-pair-colorizer-2.forceUniqueOpeningColor": true,
-	"bracket-pair-colorizer-2.highlightActiveScope": true,
-	"bracket-pair-colorizer-2.showBracketsInGutter": true,
+    "better-comments.highlightPlainText": true,
+    "black-formatter.showNotifications": "onWarning",
+    "bracket-pair-colorizer-2.colorMode": "Consecutive",
+    "bracket-pair-colorizer-2.colors": [
+        "Gold",
+        "Teal",
+        "LightSkyBlue",
+        "Green",
+        "Lime",
+        "Yellow",
+        "Orange",
+        "White",
+    ],
+    "bracket-pair-colorizer-2.excludedLanguages": [
+        "HTML"
+    ],
+    "bracket-pair-colorizer-2.activeScopeCSS": [
+        "borderStyle : solid",
+        "borderWidth : 1px",
+        "borderColor : {color}",
+        "opacity: 0.5"
+    ],
+    "bracket-pair-colorizer-2.depreciation-notice": false,
+    "bracket-pair-colorizer-2.forceIterationColorCycle": true,
+    "bracket-pair-colorizer-2.forceUniqueOpeningColor": true,
+    "bracket-pair-colorizer-2.highlightActiveScope": true,
+    "bracket-pair-colorizer-2.showBracketsInGutter": true,
 
-	"debug.openExplorerOnEnd": true,
-	"debug.saveBeforeStart": "nonUntitledEditorsInActiveGroup",
-	"djangointellisense.settingsModule": "prosit.settings",
-	"djangointellisense.projectRoot": "F:\\Coding\\zartek\\prosit\\prosit",
+    "debug.openExplorerOnEnd": true,
+    "debug.saveBeforeStart": "nonUntitledEditorsInActiveGroup",
+    "doki.sticker.path": "F:\\HD Wallpapers\\sasuke.webp",
+    "doki.sticker.css": "z-index:100;background-position:100% 97%;background-size: 7.5%",
+    "doki.statusbar.name": "Zero",
+    "doki.background.enabled": true,
+    "doki.background.path": "F:\\HD Wallpapers\\Anime\\Naruto\\uchiha-mangekyo.jpg",
+    "doki.wallpaper.enabled": false,
+    "doki.wallpaper.path": "F:\\HD Wallpapers\\Anime\\Naruto\\uchiha-mangekyo.jpg",
 
-	"editor.autoClosingBrackets": "always",
-	"editor.fontSize": 17,
-	"editor.fontLigatures": true,
-	"editor.guides.bracketPairs": true,
-	"editor.guides.bracketPairsHorizontal": true,
-	"editor.linkedEditing": true,
-	"editor.language.colorizedBracketPairs": [
+    "editor.accessibilitySupport": "off",
+    "editor.autoClosingBrackets": "always",
+    "editor.bracketPairColorization.enabled": true,
+    "editor.cursorBlinking": "smooth",
+    "editor.detectIndentation": false,
+    "editor.fontSize": 17,
 
-	],
-	"editor.tokenColorCustomizations": {
-		"[Material Monokai High Contrast]": {
-			"textMateRules": [
-				{
-					// Python Function Call
-					"name": "Python Generic Function Call",
-					"scope": "meta.function-call.generic.python",
-					"settings": {
-						"foreground": "#A6E22E",
-						"fontStyle": "italic bold"
-					}
-				},
-				{
-					// Python Attributes
-					"name": "Python Attributes",
-					"scope": [
-						"meta.attribute.python",
-						"variable.other.property.js"
-					],
-					"settings": {
-						"foreground": "#1EDBEC",
-						"fontStyle": "underline"
-					}
-				},
-				{
-					// Python Class Name
-					"name": "Python Class Name",
-					"scope": "entity.name.type.class.python",
-					"settings": {
-						"foreground": "#9DFF00",
-						"fontStyle": ""
-					}
-				},
-				{
-					// Using parameters in functions
-					"name": "Using Paramters",
-					"scope": [
-						"parameter",
-						"variable.parameter",
-						"variable.parameter.js",
-					],
-					"settings": {
-						"foreground": "#FD971F",
-						"fontStyle": "italic"
-					}
-				},
-				// {
-				// 	// All CAPS Constant
-				// 	"scope": "constant.other.caps.python",
-				// 	"settings": {
-				// 		"foreground": "#4FC1FF"
-				// 	}
-				// },
-			],
-			// "variables": "#ff8c00"
-		},
-		"[Monokai]": {
-			"textMateRules": [
-				{
-					// All CAPS Constant
-					"scope": "constant.other.caps.python",
-					"settings": {
-						"foreground": "#B78AFF"
-					}
-				},
-				{
-					// All CAPS Constant
-					"scope": "variable.other.constant",
-					"settings": {
-						"foreground": "#4FC1FF"
-					}
-				},
-				{
-					// Python Attributes
-					"scope": "meta.attribute.python",
-					"settings": {
-						"foreground": "#1EDBEC",
-						"fontStyle": "underline"
-					}
-				}
-			]
-		},
-	},
-	"editor.wordWrap": "on",
-	"explorer.confirmUndo": "verbose",
+    "editor.fontLigatures": true,
+    "editor.guides.bracketPairs": true,
+    "editor.guides.bracketPairsHorizontal": true,
+    "editor.linkedEditing": true,
+    "editor.language.colorizedBracketPairs": [],
+    "editor.parameterHints.cycle": true,
+    "editor.quickSuggestions": {
+        "other": "on",
+        "comments": "off",
+        "strings": "on"
+    },
+    "editor.semanticHighlighting.enabled": true,
+    "editor.stickyScroll.enabled": true,
+    "editor.suggest.insertMode": "replace",
+    "editor.suggest.localityBonus": true,
+    "editor.suggest.matchOnWordStartOnly": false,
+    "editor.suggest.showStatusBar": true,
+    "editor.tabCompletion": "onlySnippets",
+    "editor.tokenColorCustomizations": {
+        "[Material Monokai High Contrast]": {
+            "textMateRules": [
+                {
+                    // Python Function Call
+                    "name": "Python Generic Function Call",
+                    "scope": "meta.function-call.generic.python",
+                    "settings": {
+                        "foreground": "#A6E22E",
+                        "fontStyle": "italic bold"
+                    }
+                },
+                {
+                    // Python Attributes
+                    "name": "Python Attributes",
+                    "scope": [
+                        "meta.attribute.python",
+                        "variable.other.property.js"
+                    ],
+                    "settings": {
+                        "foreground": "#1EDBEC",
+                        "fontStyle": "underline"
+                    }
+                },
+                {
+                    // Python Class Name
+                    "name": "Python Class Name",
+                    "scope": "entity.name.type.class.python",
+                    "settings": {
+                        "foreground": "#9DFF00",
+                        "fontStyle": ""
+                    }
+                },
+                {
+                    // Using parameters in functions
+                    "name": "Using Paramters",
+                    "scope": [
+                        "parameter",
+                        "variable.parameter",
+                        "variable.parameter.js",
+                    ],
+                    "settings": {
+                        "foreground": "#FD971F",
+                        "fontStyle": "italic"
+                    }
+                },
+                // {
+                // 	// All CAPS Constant
+                // 	"scope": "constant.other.caps.python",
+                // 	"settings": {
+                // 		"foreground": "#4FC1FF"
+                // 	}
+                // },
+            ],
+            // "variables": "#ff8c00"
+        },
+        "[Monokai]": {
+            "textMateRules": [
+                {
+                    // All CAPS Constant
+                    "scope": "constant.other.caps.python",
+                    "settings": {
+                        "foreground": "#B78AFF"
+                    }
+                },
+                {
+                    // All CAPS Constant
+                    "scope": "variable.other.constant",
+                    "settings": {
+                        "foreground": "#4FC1FF"
+                    }
+                },
+                {
+                    // Python Attributes
+                    "scope": "meta.attribute.python",
+                    "settings": {
+                        "foreground": "#1EDBEC",
+                        "fontStyle": "underline"
+                    }
+                }
+            ]
+        },
+        // https://github.com/doki-theme/doki-theme-vscode/blob/master/package.json#L1135
+        // Doki Theme: TypeMoon: Ishtar
+        "[62a4f26f-34b2-46f8-a10c-798e48c1ce9d]": {
+            "comments": "#909090",
+            "keywords": "#F92672",
+            "textMateRules": [
+                {
+                    "name": "Class Names",
+                    "scope": "entity.name.type.class",
+                    "settings": {
+                        "foreground": "#52c3f0",
+                        "fontStyle": "bold"
+                    }
+                },
+                {
+                    "name": "Python Function Name",
+                    "scope": [
+                        // "entity.name.function.python",
+                        // "Color theme: function.declaration",
+                        // "entity.name.function",
+                        // "meta.function.python"
+                    ],
+                    "settings": {
+                        "foreground": "#A6E22E",
+                        "fontStyle": ""
+                    }
+                },
+                {
+                    "name": "Function Parameter",
+                    "scope": "variable.parameter",
+                    "settings": {
+                        "foreground": "#fe73bd",
+                        "fontStyle": ""
+                    }
+                },
+                {
+                    "scope": [
+                        "string.quoted.single.python",
+                    ],
+                    "settings": {
+                        "foreground": "#ffda52",
+                        "fontStyle": ""
+                    }
+                },
+                {
+                    "scope": "meta.function-call.arguments.python",
+                    "settings": {
+                        "foreground": "#d7d7d7",
+                        "fontStyle": ""
+                    }
+                },
+                {
+                    "scope": "string.quoted.docstring.multi.python",
+                    "settings": {
+                        "foreground": "#fff89a",
+                        "fontStyle": "bold"
+                    }
+                }
+            ],
+            "functions": "#89ff29"
+        }
 
-	"files.insertFinalNewline": true,
+    },
+    "editor.wordWrap": "on",
+    "explorer.confirmUndo": "verbose",
 
-	"git.autofetch": true,
-	"git.supportCancellation": true,
-	"git.showPushSuccessNotification": true,
-	"git.statusLimit": 1000,
 
-	"html.customData": [
-		"./.vscode/html-data.json"
-	],
-	"html.format.indentHandlebars": true,
-	"html.format.indentInnerHtml": true,
+    "files.associations": {
+        ".env": "env"
+    },
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
 
-	"python.analysis.autoImportCompletions": true,
-	"python.analysis.completeFunctionParens": true,
-	"python.analysis.indexing": true,
-	"python.formatting.provider": "black",
-	"python.languageServer": "Pylance",
-	"python.linting.enabled": true,
-	"python.linting.pylintEnabled": true,
-	"python.linting.pycodestyleArgs": [
-		"--ignore=E501"
-	],
-	"python.linting.lintOnSave": true,
-	"python.linting.pylintArgs": [
-		// "--disable=W0311",
-		"--load-plugin=pylint_django"
-	],
-	"python.linting.pylintCategorySeverity.warning": "Information",
+    "git.autofetch": true,
+    "git.supportCancellation": true,
+    "git.showPushSuccessNotification": true,
+    "git.statusLimit": 1000,
+    "github.gitAuthentication": false,
+    "gitlens.codeLens.scopes": [
+        "document",
+        "containers",
+        "blocks"
+    ],
 
-	"remote.SSH.remotePlatform": {
-		"ec2-54-87-50-51.compute-1.amazonaws.com": "linux",
-		"blackvirus.myddns.me": "linux",
-		"blackvirus-server": "linux"
-	},
+    "html.customData": [
+        "./.vscode/html-data.json"
+    ],
+    "html.format.indentHandlebars": true,
+    "html.format.indentInnerHtml": true,
 
-	"tabnine.experimentalAutoImports": true,
-	"telemetry.telemetryLevel": "off",
-	"terminal.integrated.commandsToSkipShell": [
-		"language-julia.interrupt"
-	],
-	"terminal.integrated.defaultProfile.windows": "Command Prompt",
-	"thunder-client.codeSnippetLanguage": "cs-httpclient",
-	"thunder-client.htmlView": "Preview",
+    "javascript.inlayHints.enumMemberValues.enabled": true,
 
-	"typescript.updateImportsOnFileMove.enabled": "always",
-	"workbench.editorAssociations": {
-		"*.pdf": "default",
-		"*.ipynb": "jupyter-notebook"
-	},
-	"workbench.iconTheme": "material-icon-theme",
-	"workbench.productIconTheme": "material-product-icons",
-	"workbench.colorCustomizations": {
-		"[Material Monokai High Contrast]": {
-			"editor.background": "#12181B",
-			"editorGutter.addedBackground": "#487E02",
-			"editorGutter.deletedBackground": "#C20000",
-			"editorGutter.modifiedBackground": "#1E96C5",
-
-			"gitDecoration.addedResourceForeground": "#00CCCC",
-			"gitDecoration.conflictingResourceForeground": "#F0FF1B",
-			"gitDecoration.deletedResourceForeground": "#FF2020",
-			"gitDecoration.ignoredResourceForeground": "#777777",
-			"gitDecoration.modifiedResourceForeground": "#E4B25A", // #DAB678
-			"gitDecoration.renamedResourceForeground": "#F75EFF",
-			"gitDecoration.stageDeletedResourceForeground": "#DC3A0D",
-			"gitDecoration.stageModifiedResourceForeground": "#0FD7FF",
-			"gitDecoration.untrackedResourceForeground": "#9AD25A", // #90C356
-			"gitlens.decorations.ignoredForegroundColor": "#777777",
-			"sideBar.foreground": "#BEBEBE",
-			"sideBar.background": "#161F23",
-			"statusBar.debuggingBackground": "#DD6819",
-			"statusBar.foreground": "#CCCCCC",
-			// "statusBar.background": "#007ACC",
-			"symbolIcon.classForeground": "#9DFF00",
-		},
-		"[Monokai]": {
-			"editor.background": "#1D1E1B",
-			"editorGutter.addedBackground": "#487E02",
-			"editorGutter.deletedBackground": "#C20000",
-			"editorGutter.modifiedBackground": "#1E96C5",
-
-			"gitDecoration.addedResourceForeground": "#00CCCC",
-			"gitDecoration.conflictingResourceForeground": "#F0FF1B",
-			"gitDecoration.deletedResourceForeground": "#FF2020",
-			"gitDecoration.ignoredResourceForeground": "#777777",
-			"gitDecoration.modifiedResourceForeground": "#E4B25A", // #DAB678
-			"gitDecoration.renamedResourceForeground": "#F75EFF",
-			"gitDecoration.stageDeletedResourceForeground": "#DC3A0D",
-			"gitDecoration.stageModifiedResourceForeground": "#0FD7FF",
-			"gitDecoration.untrackedResourceForeground": "#9AD25A", // #90C356
-			"gitlens.decorations.ignoredForegroundColor": "#777777",
-
-			"statusBar.background": "#2A2C2B",
-			"statusBar.debuggingBackground": "#DD6819",
-		},
-		// "editorBracketHighlight.foreground1": "#FFD700",
-		// "editorBracketHighlight.foreground2": "#00CED1",
-		// "editorBracketHighlight.foreground3": "#3CB371",
-		// "editorBracketHighlight.foreground4": "#ADFF2F",
-		// "editorBracketHighlight.foreground5": "#FF8C00",
-		// "editorBracketHighlight.foreground6": "#FFFFFF"
-	},
-	"workbench.startupEditor": "none",
-
-	"[css]": {
-		"editor.defaultFormatter": "aeschli.vscode-css-formatter"
-	},
-	"[python]": {
-		"editor.defaultFormatter": "ms-python.python"
-	},
-	"black-formatter.showNotifications": "onError",
-	"gitlens.codeLens.scopes": [
-		"document",
-		"containers",
-		"blocks"
-	],
-	"editor.accessibilitySupport": "off",
-	"editor.tabCompletion": "onlySnippets",
-	"workbench.colorTheme": "Material Monokai High Contrast",
-	"files.associations": {
-		".env": "env"
-	},
-	"redhat.telemetry.enabled": false,
-
-	// For Custom folder icons in Material Icon Theme
-    // Place icons in %USERPROFILE%\.vscode\extensions\icons\
-    // Name should be in the format:
-    // folder-<serializer>.svg
-    // folder-<serializer>-open.svg
     "material-icon-theme.folders.associations": {
-        "serializer": "serializer",
-        "serializers": "serializer"
+        // "serializer": "serializer",
+        // "serializers": "serializer"
+        "preference": "config",
+        "preferences": "config"
+    },
+
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.completeFunctionParens": true,
+    "python.analysis.indexing": true,
+    "python.formatting.provider": "black",
+    "python.languageServer": "Pylance",
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": true,
+    "python.linting.pycodestyleArgs": [
+        "--ignore=E501"
+    ],
+    "python.linting.lintOnSave": true,
+    // "python.linting.pylintArgs": [
+    // 	// "--disable=W0311",
+    // 	"--load-plugin=pylint_django"
+    // ],
+    "python.linting.pylintCategorySeverity.warning": "Information",
+
+    "redhat.telemetry.enabled": false,
+
+    "telemetry.telemetryLevel": "off",
+    "terminal.integrated.commandsToSkipShell": [
+        "language-julia.interrupt"
+    ],
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
+    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": true,
+    "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
+    "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+
+    "workbench.colorTheme": "Material Monokai High Contrast",
+    "workbench.colorCustomizations": {
+        "[Material Monokai High Contrast]": {
+            "editor.background": "#12181B",
+            "editorGutter.addedBackground": "#487E02",
+            "editorGutter.deletedBackground": "#C20000",
+            "editorGutter.modifiedBackground": "#1E96C5",
+
+            "gitDecoration.addedResourceForeground": "#00CCCC",
+            "gitDecoration.conflictingResourceForeground": "#F0FF1B",
+            "gitDecoration.deletedResourceForeground": "#FF2020",
+            "gitDecoration.ignoredResourceForeground": "#777777",
+            "gitDecoration.modifiedResourceForeground": "#E4B25A", // #DAB678
+            "gitDecoration.renamedResourceForeground": "#F75EFF",
+            "gitDecoration.stageDeletedResourceForeground": "#DC3A0D",
+            "gitDecoration.stageModifiedResourceForeground": "#0FD7FF",
+            "gitDecoration.untrackedResourceForeground": "#9AD25A", // #90C356
+            "gitlens.decorations.ignoredForegroundColor": "#777777",
+            "sideBar.foreground": "#BEBEBE",
+            "sideBar.background": "#161F23",
+            "statusBar.debuggingBackground": "#DD6819",
+            "statusBar.foreground": "#CCCCCC",
+            "symbolIcon.classForeground": "#9DFF00",
+        },
+        "[Monokai]": {
+            "editor.background": "#1D1E1B",
+            "editorGutter.addedBackground": "#487E02",
+            "editorGutter.deletedBackground": "#C20000",
+            "editorGutter.modifiedBackground": "#1E96C5",
+
+            "gitDecoration.addedResourceForeground": "#00CCCC",
+            "gitDecoration.conflictingResourceForeground": "#F0FF1B",
+            "gitDecoration.deletedResourceForeground": "#FF2020",
+            "gitDecoration.ignoredResourceForeground": "#777777",
+            "gitDecoration.modifiedResourceForeground": "#E4B25A", // #DAB678
+            "gitDecoration.renamedResourceForeground": "#F75EFF",
+            "gitDecoration.stageDeletedResourceForeground": "#DC3A0D",
+            "gitDecoration.stageModifiedResourceForeground": "#0FD7FF",
+            "gitDecoration.untrackedResourceForeground": "#9AD25A", // #90C356
+            "gitlens.decorations.ignoredForegroundColor": "#777777",
+
+            "statusBar.debuggingBackground": "#DD6819",
+        },
+        // "editorBracketHighlight.foreground1": "#FFD700",
+        // "editorBracketHighlight.foreground2": "#00CED1",
+        // "editorBracketHighlight.foreground3": "#3CB371",
+        // "editorBracketHighlight.foreground4": "#ADFF2F",
+        // "editorBracketHighlight.foreground5": "#FF8C00",
+        // "editorBracketHighlight.foreground6": "#FFFFFF"
+    },
+    "workbench.editorAssociations": {
+        "*.pdf": "default",
+        "*.ipynb": "jupyter-notebook"
+    },
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.productIconTheme": "emoji-product-icons-fun",
+    "workbench.startupEditor": "none",
+
+    "[css]": {
+        "editor.defaultFormatter": "aeschli.vscode-css-formatter"
+    },
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.python"
     },
 }

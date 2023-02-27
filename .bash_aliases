@@ -121,3 +121,11 @@
 	alias createsu="python manage.py createsuperuser"
 
 
+
+
+# Enable aliases to be sudo’ed
+alias sudo='sudo '
+
+# Always enable colored `grep` output
+# Note: `GREP_OPTIONS="--color=auto"` is deprecated, hence the alias usage.
+alias grep='grep --color=auto'
