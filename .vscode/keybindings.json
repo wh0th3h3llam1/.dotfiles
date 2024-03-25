@@ -1,82 +1,144 @@
-// Place your key bindings in this file to override the defaultsauto[]
+// Place your key bindings in this file to override the defaults
 [
-	{
-		"key": "ctrl+l ctrl+t",
-		"command": "editor.action.transformToTitlecase"
-	},
-	{
-		"key": "ctrl+l ctrl+l",
-		"command": "editor.action.transformToLowercase"
-	},
-	{
-		"key": "ctrl+l ctrl+u",
-		"command": "editor.action.transformToUppercase"
-	},
-	{
-		"key": "ctrl+l ctrl+o",
-		"command": "editor.action.transposeLetters"
-	},
-	{
-		"key": "ctrl+j",
-		"command": "editor.action.joinLines"
-	},
-	{
-		"key": "ctrl+shift+up",
-		"command": "editor.action.insertCursorAbove",
-		"when": "editorTextFocus"
-	},
-	{
-		"key": "ctrl+alt+up",
-		"command": "-editor.action.insertCursorAbove",
-		"when": "editorTextFocus"
-	},
-	{
-		"key": "ctrl+shift+down",
-		"command": "editor.action.insertCursorBelow",
-		"when": "editorTextFocus"
-	},
-	{
-		"key": "ctrl+alt+down",
-		"command": "-editor.action.insertCursorBelow",
-		"when": "editorTextFocus"
-	},
-	{
-		"key": "ctrl+l ctrl+s",
-		"command": "editor.action.transformToSnakecase"
-	},
-	{
-		"key": "ctrl+l ctrl+p",
-		"command": "-editor.action.transformToSnakecase",
-		"when": "editorTextFocus"
-	},
-	{
-		"key": "ctrl+tab",
-		"command": "workbench.action.nextPanelView",
-		"when": "panelFocus"
-	},
-	{
-		"key": "ctrl+w",
-		"command": "workbench.action.terminal.kill",
-		"when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
-	},
-	{
-		"key": "ctrl+w",
-		"command": "workbench.action.terminal.killEditor",
-		"when": "terminalEditorFocus && terminalHasBeenCreated && resourceScheme == 'vscode-terminal' || terminalEditorFocus && terminalProcessSupported && resourceScheme == 'vscode-terminal'"
-	},
-	{
-		"key": "ctrl+w",
-		"command": "-workbench.action.terminal.killEditor",
-		"when": "terminalEditorFocus && terminalFocus && terminalHasBeenCreated && resourceScheme == 'vscode-terminal' || terminalEditorFocus && terminalFocus && terminalProcessSupported && resourceScheme == 'vscode-terminal'"
-	},
-	{
-		"key": "ctrl+up",
-		"command": "workbench.action.terminal.resizePaneUp",
-		"when": "terminalFocus"
-	},
-	{
-		"key": "ctrl+down",
-		"command": "workbench.action.terminal.resizePaneDown",
-		"when": "terminalFocus"
-	}
+    {
+        "key": "ctrl+l ctrl+t",
+        "command": "editor.action.transformToTitlecase"
+    },
+    {
+        "key": "ctrl+l ctrl+l",
+        "command": "editor.action.transformToLowercase"
+    },
+    {
+        "key": "ctrl+l ctrl+u",
+        "command": "editor.action.transformToUppercase"
+    },
+    {
+        "key": "ctrl+l ctrl+o",
+        "command": "editor.action.transposeLetters"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "editor.action.joinLines"
+    },
+    {
+        "key": "ctrl+shift+up",
+        "command": "editor.action.insertCursorAbove",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+alt+up",
+        "command": "-editor.action.insertCursorAbove",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+down",
+        "command": "editor.action.insertCursorBelow",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+alt+down",
+        "command": "-editor.action.insertCursorBelow",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+l ctrl+s",
+        "command": "editor.action.transformToSnakecase"
+    },
+    {
+        "key": "ctrl+l ctrl+p",
+        "command": "-editor.action.transformToSnakecase",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+tab",
+        "command": "workbench.action.nextPanelView",
+        "when": "panelFocus"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "workbench.action.terminal.kill",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "workbench.action.terminal.killEditor",
+        "when": "terminalEditorFocus && terminalHasBeenCreated && resourceScheme == 'vscode-terminal' || terminalEditorFocus && terminalProcessSupported && resourceScheme == 'vscode-terminal'"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "-workbench.action.terminal.killEditor",
+        "when": "terminalEditorFocus && terminalFocus && terminalHasBeenCreated && resourceScheme == 'vscode-terminal' || terminalEditorFocus && terminalFocus && terminalProcessSupported && resourceScheme == 'vscode-terminal'"
+    },
+    {
+        "key": "ctrl+up",
+        "command": "workbench.action.terminal.resizePaneUp",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+down",
+        "command": "workbench.action.terminal.resizePaneDown",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+m",
+        "command": "-editor.action.toggleTabFocusMode"
+    },
+    {
+        "key": "ctrl+l ctrl+d",
+        "command": "diff.file"
+    },
+    {
+        "key": "ctrl+alt+t",
+        "command": "workbench.view.testing.focus"
+    },
+    {
+        "key": "ctrl+r",
+        "command": "-workbench.action.reloadWindow",
+        "when": "isDevelopment"
+    },
+    {
+        "key": "shift+f11",
+        "command": "workbench.action.toggleFullScreen",
+        "when": "inDebugMode"
+    },
+    {
+        // ctrl + ;
+        "key": "ctrl+oem_7",
+        "command": "git.checkout"
+    },
+    {
+        // ctrl + ; && ctrl + p
+        "key": "ctrl+oem_1 ctrl+p",
+        "command": "git.pullFrom"
+    },
+    {
+        // ctrl + ; && ctrl + ]
+        "key": "ctrl+oem_1 ctrl+oem_6",
+        "command": "git.push"
+    },
+    {
+        // ctrl + ; && ctrl + [
+        "key": "ctrl+oem_1 ctrl+oem_4",
+        "command": "git.pull"
+    },
+    {
+        // ctrl + ; && ctrl + d
+        "key": "ctrl+oem_1 ctrl+d",
+        "command": "git.deleteBranch"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "-expandLineSelection",
+        "when": "textInputFocus"
+    },
+    {
+        // ctrl + l && ctrl + ;
+        "key": "ctrl+l ctrl+oem_1",
+        "command": "expandLineSelection"
+    },
+    {
+        // ctrl + ; && ctrl + t
+        "key": "ctrl+oem_1 ctrl+t",
+        "command": "git.stashApply"
+    }
 ]

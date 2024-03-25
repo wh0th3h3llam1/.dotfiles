@@ -39,16 +39,42 @@
 
     "editor.accessibilitySupport": "off",
     "editor.autoClosingBrackets": "always",
-    "editor.bracketPairColorization.enabled": true,
+    // Controls whether bracket pair colorization is enabled or not. Use 'workbench.colorCustomizations' to override the bracket highlight colors.
+	"editor.bracketPairColorization.enabled": true,
     "editor.cursorBlinking": "smooth",
     "editor.detectIndentation": false,
     "editor.fontSize": 17,
-
     "editor.fontLigatures": true,
-    "editor.guides.bracketPairs": true,
-    "editor.guides.bracketPairsHorizontal": true,
+    // Controls whether the editor should render indent guides.
+	"editor.guides.indentation": true,
+	// Controls whether bracket pair guides are enabled or not.
+	//  - true: Enables bracket pair guides.
+	//  - active: Enables bracket pair guides only for the active bracket pair.
+	//  - false: Disables bracket pair guides.
+	"editor.guides.bracketPairs": "active",
+	// Controls whether horizontal bracket pair guides are enabled or not.
+	//  - true: Enables horizontal guides as addition to vertical bracket pair guides.
+	//  - active: Enables horizontal guides only for the active bracket pair.
+	//  - false: Disables horizontal bracket pair guides.
+	"editor.guides.bracketPairsHorizontal": "active",
+	// Controls whether the editor should highlight the active indent guide.
+	"editor.guides.highlightActiveIndentation": true,
+	// Controls whether bracket pair guides are enabled or not.
+	"editor.guides.highlightActiveBracketPair": true,
     "editor.linkedEditing": true,
-    "editor.language.colorizedBracketPairs": [],
+    // Defines the bracket symbols that increase or decrease the indentation.
+	"editor.language.brackets": [
+		["[", "]"],
+		["(", ")"],
+		["{", "}"]
+	],
+    // Defines the bracket pairs that are colorized by their nesting level if bracket pair colorization is enabled.
+    "editor.language.colorizedBracketPairs": [
+        ["[", "]"],
+		["(", ")"],
+		["{", "}"],
+		["<", ">"]
+    ],
     "editor.parameterHints.cycle": true,
     "editor.quickSuggestions": {
         "other": "on",
@@ -250,16 +276,15 @@
     "python.formatting.provider": "black",
     "python.languageServer": "Pylance",
     "python.linting.enabled": true,
-    "python.linting.pylintEnabled": true,
+    "python.linting.lintOnSave": true,
     "python.linting.pycodestyleArgs": [
         "--ignore=E501"
     ],
-    "python.linting.lintOnSave": true,
     // "python.linting.pylintArgs": [
-    // 	// "--disable=W0311",
     // 	"--load-plugin=pylint_django"
     // ],
     "python.linting.pylintCategorySeverity.warning": "Information",
+    "python.linting.pylintEnabled": true,
 
     "redhat.telemetry.enabled": false,
 
@@ -323,6 +348,24 @@
         // "editorBracketHighlight.foreground4": "#ADFF2F",
         // "editorBracketHighlight.foreground5": "#FF8C00",
         // "editorBracketHighlight.foreground6": "#FFFFFF"
+        "editorBracketHighlight.foreground1": "#FAC928",
+		"editorBracketHighlight.foreground2": "#C122E9",
+		"editorBracketHighlight.foreground3": "#057AFF",
+		"editorBracketHighlight.foreground4": "#00E74D",
+		"editorBracketHighlight.foreground5": "#F51384",
+		"editorBracketHighlight.foreground6": "#19F9D8",
+		"editorBracketPairGuide.background1": "#FAC9289E",
+		"editorBracketPairGuide.background2": "#C122E99E",
+		"editorBracketPairGuide.background3": "#057AFF9E",
+		"editorBracketPairGuide.background4": "#00E74D9E",
+		"editorBracketPairGuide.background5": "#F513849E",
+		"editorBracketPairGuide.background6": "#19F9D89E",
+		"editorBracketPairGuide.activeBackground1": "#FAC9289E",
+		"editorBracketPairGuide.activeBackground2": "#C122E99E",
+		"editorBracketPairGuide.activeBackground3": "#057AFF9E",
+		"editorBracketPairGuide.activeBackground4": "#00E7499E",
+		"editorBracketPairGuide.activeBackground5": "#F513849E",
+		"editorBracketPairGuide.activeBackground6": "#19F9D89E"
     },
     "workbench.editorAssociations": {
         "*.pdf": "default",
